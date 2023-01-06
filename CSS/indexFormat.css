@@ -1,0 +1,258 @@
+
+  /* 
+========================
+    fondo animado movil
+========================
+*/
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #F5E4C3 50%,#FFF 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+
+
+  /* 
+========================
+    Contenedor paara el pie de pagina en 3 columnas
+========================
+*/
+
+.container_pie{
+    text-align:center;
+    color: aliceblue;
+}
+.left_cont{
+    float: left;
+    color: aliceblue;
+}
+.right_cont{
+    color: aliceblue;
+
+    float: right;
+}
+.center_cont{
+   display:inline-block;
+   color: aliceblue;
+
+}
+
+
+
+
+
+/* 
+========================
+    css para poner elementos en paralelo.  usado para los botones
+========================
+*/
+
+.float-container {
+    border: 5px; 
+    align-items: center;
+    width: 100%;
+    
+  }
+  
+  .float-child1 {
+    width: 50%;
+    float: left; 
+  }  
+  
+  .float-child2 {
+    width: 50%;
+    float: right; 
+  }  
+  
+  
+
+
+  
+  /* 
+========================
+    Contenedor para 2 imagenes
+    en paralelo
+========================
+*/
+
+#container_ima {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
+  #left {
+    position: absolute;
+    width: calc(50% + 100px);
+    height: 600px;
+    transform: skew(-20deg, 0deg);
+    overflow: hidden;
+  }
+
+  #right {
+    position: absolute;
+    width: calc(50% + 100px);
+    height: 600px;
+    transform: skew(-20deg, 0deg);
+    overflow: hidden;
+  }
+  #left img, #right img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: skew(20deg, 0deg);
+  }
+  .content_imag {
+    position: absolute;
+    padding:10vmin;
+    width: 50%;
+    text-align: center;
+    top: 50%;
+    left: calc(50% + 50px);
+    background-color: rgba(255, 255, 255, 0.458);
+    transform: skew(20deg, 0deg) translate(-50%, -50%);
+    z-index: 1;
+  }
+  #right .content_imag {
+    left: 50%;
+    right: 50px;
+  }
+  #left, #right img {
+    left: -100px;
+  }
+  #right, #left img {
+    right: -100px;
+  }
+
+
+
+  
+  /* 
+========================
+    Contenedor para 2 imagenes
+    en paralelo
+========================
+*/
+
+#container_ima2 {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  #left2 {
+    position: absolute;
+    width: calc(50% + 100px);
+    height: 300px;
+    transform: skew(-20deg, 0deg);
+    overflow: hidden;
+  }
+
+  #right2 {
+    position: absolute;
+    width: calc(50% + 100px);
+    height: 300px;
+    transform: skew(-20deg, 0deg);
+    overflow: hidden;
+  }
+  #left2 img, #right2 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: skew(20deg, 0deg);
+  }
+  .content_imag2 {
+    position: absolute;
+    padding:5vmin;
+    width: 60%;
+    text-align: center;
+    top: 50%;
+    left: calc(50% + 50px);
+    background-color: rgba(255, 255, 255, 0.655);
+    transform: skew(20deg, 0deg) translate(-50%, -50%);
+    z-index: 1;
+  }
+  
+  #right2 .content_imag2 {
+    left: 50%;
+    right: 50px;
+  }
+  #left2, #right2 img {
+    left: -100px;
+  }
+  #right2, #left2 img {
+    right: -100px;
+  }
+
+
+
+
+
+
+.fondo_texto {
+    background-color: rgba(255, 255, 255, 0.458);
+}
+
+
+
+
+
+
+
+
+.contenedor_titulo{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.texto-encima{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
